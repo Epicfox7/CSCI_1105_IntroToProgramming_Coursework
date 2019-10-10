@@ -1,4 +1,4 @@
-class Untitle {
+class _IntroductionToProgramming {
 	public static void main(String[] args) {
 		/*
 		Author: John Lopez
