@@ -1,4 +1,4 @@
-class Title Exercise 1.5 {
+class _Introduction to Programming {
 	public static void main(String[] args) {
 		/*
 		Author: John Lopez
