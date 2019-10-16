@@ -1,3 +1,8 @@
+/*
+Author: John Lopez.
+Date: 10/16/2019
+*/
+
 import java.util.Scanner;
 
 class Exercise_3_3 {
