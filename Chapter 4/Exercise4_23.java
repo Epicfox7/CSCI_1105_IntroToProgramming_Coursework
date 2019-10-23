@@ -15,6 +15,8 @@ class Untitled {
 		System.out.print("Enter the state tax withholding rate: ");
 		String staxrate = input.nextInt();
 		
+		//missing the federal and state tax rates %
+		
 		double tdeduction = ftaxrate + staxrate;
 		double grosspay = hours * hourlypay;
 		double netpay = (((hours * hourlypay) - 20.00%) - 9.0%);
