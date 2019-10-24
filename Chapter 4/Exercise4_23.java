@@ -17,19 +17,22 @@ class Exercise4_23 {
 		double staxrate = input.nextDouble();
 		
 		double grosspay = hours * hourlypay;
-		double netpay = grosspay;
 		double ftaxrate2 = grosspay * ftaxrate;
-		double staxrate2 = grosspay * staxrate;		
+		double ftaxrate3 = (int)(ftaxrate2 * 100 / 100.00);
+		double staxrate2 = grosspay * staxrate;
+		double staxrate3 = (int)(staxrate2 * 100 / 100.00);
+		double totaldeduction = ftaxrate2 + staxrate2;	
+		double netpay = grosspay - totaldeduction;	
 		
 		System.out.println(" ");
 		System.out.println("Employee Name: "+ name);
 		System.out.println("Hours Worked: "+ hours);
-		System.out.printf("Pay Rate: $%.2f\n ", hourlypay);
-		System.out.printf("Gross Pay: $%.2f\n ", grosspay);
+		System.out.printf("Pay Rate: $%.2f\n", hourlypay);
+		System.out.printf("Gross Pay: $%.2f\n", grosspay);
 		System.out.println("Deductions:");
-		System.out.printf("		Federal Withholding (20.0%): $.2\n ", (int)(ftaxrate2 * 100 / 100.00));
-		System.out.printf("        State Withholding (9.0%): $.2f\n ", (int)(staxrate2 * 100 / 100.00));
-		System.out.println("        Total Deduction:");
+		System.out.println("	Federal Withholding (20.0%): $"+ ftaxrate3);
+		System.out.println("        State Withholding (9.0%): $"+ staxrate3);
+		System.out.printf("        Total Deduction: $%.2f\n", totaldeduction);
 		System.out.printf("Net Pay: $%.2f\n ", netpay);							
 	}
 }
