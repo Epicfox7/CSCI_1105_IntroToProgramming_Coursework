@@ -30,12 +30,12 @@ class Exercise4_23 {
 		System.out.println(" ");
 		System.out.println("Employee Name: "+ name);
 		System.out.println("Hours Worked: "+ hours);
-		System.out.printf("Pay Rate: $%4.2f\n", hourlypay);
-		System.out.printf("Gross Pay: $%4.2f\n", grosspay);
+		System.out.printf("Pay Rate: $%.2f\n", hourlypay);
+		System.out.printf("Gross Pay: $%.2f\n", grosspay);
 		System.out.println("Deductions:");
-		System.out.println("	Federal Withholding (20.0%): $"+ ftaxrate2);
-		System.out.println("        State Withholding (9.0%): $"+ staxrate2);
-		System.out.printf("        Total Deduction: $%4.2f\n", totaldeduction);
-		System.out.printf("Net Pay: $%4.2f\n ", netpay);							
+		System.out.printf("	Federal Withholding (20.0%%): $%.2f\n", ftaxrate2);
+		System.out.printf("        State Withholding (9.0%%): $%.2f\n", staxrate2);
+		System.out.printf("        Total Deduction: $%.2f\n", totaldeduction);
+		System.out.printf("Net Pay: $%.2f\n ", netpay);							
 	}
 }
