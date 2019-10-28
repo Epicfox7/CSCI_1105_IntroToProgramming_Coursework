@@ -1,3 +1,8 @@
+/*
+Author: John Lopez.
+Date: 28/10/2019.
+*/
+
 import java.util.Scanner;
 
 class Exercise4_23 {
@@ -18,21 +23,19 @@ class Exercise4_23 {
 		
 		double grosspay = hours * hourlypay;
 		double ftaxrate2 = grosspay * ftaxrate;
-		double ftaxrate3 = (int)(ftaxrate2 * 100 / 100.00);
 		double staxrate2 = grosspay * staxrate;
-		double staxrate3 = (int)(staxrate2 * 100 / 100.00);
 		double totaldeduction = ftaxrate2 + staxrate2;	
 		double netpay = grosspay - totaldeduction;	
 		
 		System.out.println(" ");
 		System.out.println("Employee Name: "+ name);
 		System.out.println("Hours Worked: "+ hours);
-		System.out.printf("Pay Rate: $%.2f\n", hourlypay);
-		System.out.printf("Gross Pay: $%.2f\n", grosspay);
+		System.out.printf("Pay Rate: $%4.2f\n", hourlypay);
+		System.out.printf("Gross Pay: $%4.2f\n", grosspay);
 		System.out.println("Deductions:");
-		System.out.println("	Federal Withholding (20.0%): $"+ ftaxrate3);
-		System.out.println("        State Withholding (9.0%): $"+ staxrate3);
-		System.out.printf("        Total Deduction: $%.2f\n", totaldeduction);
-		System.out.printf("Net Pay: $%.2f\n ", netpay);							
+		System.out.println("	Federal Withholding (20.0%): $"+ ftaxrate2);
+		System.out.println("        State Withholding (9.0%): $"+ staxrate2);
+		System.out.printf("        Total Deduction: $%4.2f\n", totaldeduction);
+		System.out.printf("Net Pay: $%4.2f\n ", netpay);							
 	}
 }
