@@ -24,7 +24,7 @@ class Exercise6_3 {
 	public static int reverse(int number) {
 		int reverse = 0;
 		
-		for (;number != 0;) {
+		while (number != 0) {
 			reverse = (reverse * 10) + number % 10;
 			number = number / 10;
 		}
