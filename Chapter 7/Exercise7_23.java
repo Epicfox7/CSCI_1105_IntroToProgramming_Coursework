@@ -2,7 +2,6 @@
 Author: John Lopez.
 Date: 01/06/2020.
 */
-
 import java.util.Scanner;
 
 class Exercise7_23 {
@@ -46,7 +45,7 @@ class Exercise7_23 {
 		
 		for(int i = 0;i < lockers.length; i++){
 			if(lockerOpened(lockers[i]))
-				System.out.print("Locker " + (i + 1) + ", ");
+				System.out.print("Locker " + (i + 1) + " is open.");
 			}
 		System.out.println();
 	}
