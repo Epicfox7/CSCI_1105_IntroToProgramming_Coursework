@@ -1,52 +1,23 @@
 /*
 Author: John Lopez.
-Date: 01/06/2020.
+Date: 01/08/2020.
 */
 import java.util.Scanner;
 
 class Exercise7_23 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		String[] lockers = new String[100];
+		int numlockers = 100;
+		boolean[] lockers = new boolean[numlockers];
 		
-		lockerClosed(lockers);
-		lockersKey(lockers);
-		lockersPrint(lockers);
-		
-	}
-	
-	public static boolean lockerOpened(String lockerOpnd){
-		return lockerOpnd == "Opened";
-	}
-	
-	public static void lockerClosed(String[] lockers){
-		
-		for (int i = 0;i < lockers.length; i++){
-			lockers[i] = "Closed";
-		}
-	}
-	
-	public static void lockersKey(String[] lockers){
-		
-		int list = 0;
-		
-		for(int l = 1; l <= lockers.length; l++){
-			for(int k = 0; k < lockers.length; k += l){
-				if(lockerOpened(lockers[k]))
-					lockers[k] = "Closed";
-				else
-					lockers[k] = "Opened";
-				}
-			list ++;
-		}
-	}
-	
-	public static void lockersPrint(String[] lockers){
-		
-		for(int i = 0;i < lockers.length; i++){
-			if(lockerOpened(lockers[i]))
-				System.out.print("Locker " + (i + 1) + " is open.");
+		for(int l = 1; l <= numlockers; l++){
+			for(int k = l - 1; k < numlockers; k += l){
+				lockers[k] = !lockers[k];
 			}
-		System.out.println();
+		}
+		for(int i = 0;i < numlockers; i++){
+			if(lockers[i])
+				System.out.println("Locker " + (i + 1) + " is open.");
+		}
 	}
 }
