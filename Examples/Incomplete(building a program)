@@ -37,3 +37,15 @@ class Exercise8_5 {
 		return arrayC;//return array c here
 	}// end of the addMatrix method
 }
+
+
+/*
+Example :
+
+int[][] arrayA = new int [3][3];
+		
+		System.out.print("Enter the matrix1: ");
+		for (int i = 0;i < arrayA.length; i++)
+			for(int j = 0;j < arrayA.length; j++)
+				arrayA[i][j] = input.nextInt();
+*/
