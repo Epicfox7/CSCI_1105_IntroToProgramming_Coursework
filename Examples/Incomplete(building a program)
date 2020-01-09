@@ -11,9 +11,11 @@ class Exercise8_5 {
 		System.out.print("Enter matrix1: ");
 		double arrayA = input.nextDouble();
 		System.out.println("Enter matrix2: ");
+		System.out.println(" ");
 		double arrayB = input.nextDouble();
 		System.out.println("The matrices are added as follows ");
-		double arrayC = input.nextDouble();
+		
+		double arrayC = arrayA + arrayB;
 		// declare array a
 		// declare array b
 		
