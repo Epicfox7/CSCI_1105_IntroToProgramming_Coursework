@@ -6,46 +6,37 @@ import java.util.Scanner;
 
 class Exercise8_5 {
 	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-		
-		System.out.print("Enter matrix1: ");
-		double arrayA = input.nextDouble();
-		System.out.println("Enter matrix2: ");
-		System.out.println(" ");
-		double arrayB = input.nextDouble();
-		System.out.println("The matrices are added as follows ");
-		
-		double arrayC = arrayA + arrayB;
-		// declare array a
-		// declare array b
-		
-		
-		System.out.println(arrayA +" + "+ arrayB +" = "+ arrayC);
-		
-		// print array c
+	Scanner input = new Scanner(System.in);
+	
+		int[][] a = new int[3][3];// declare array a
+		System.out.print("Enter the matrix1: ");
+		for (int i = 0;i < a.length; i++)
+			for(int j = 0;j < a[i].length; j++)
+				a[i][j] = input.nextInt();
+				
+		int[][] b = new int [3][3];
+		System.out.print("Enter the matrix2: ");
+		for (int i = 0;i < b.length; i++)
+			for(int j = 0;j < b[i].length; j++)
+				b[i][j] = input.nextInt();
+				
+		System.out.println();
+		double c = 0;
+		System.out.print("The matrices are added as follows ");
+		System.out.println();
+		System.out.print(c);// print array c
 	}
 		public static double[][] addMatrix(double[][] a, double[][] b){	
-		double[][] arrayC = new double[3][3];
+		double[][] c = new double[3][3];
 		//create an array c to store the added numbers into 
+		
 		//method to add matrices
 		for(int i = 0;i < a.length; i++) { //for each row
 			for(int j = 0; j < a.length; j++) { //for each column
-				arrayC[i][j] = a[i][j] + b[i][j];
+				c[i][j] = a[i][j] + b[i][j];
 				// add each element and store it into c
 			}
 		}
-		return arrayC;//return array c here
+		return c;//return array c here
 	}// end of the addMatrix method
-}
-
-
-/*
-Example :
-
-int[][] arrayA = new int [3][3];
-		
-		System.out.print("Enter the matrix1: ");
-		for (int i = 0;i < arrayA.length; i++)
-			for(int j = 0;j < arrayA.length; j++)
-				arrayA[i][j] = input.nextInt();
-*/
+}		
