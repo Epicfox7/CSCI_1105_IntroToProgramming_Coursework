@@ -19,19 +19,18 @@ class Exercise8_37 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 			String[][] capitals = new String[1][1];
-						
+			int correctCount = 0;
+		
+			
 			System.out.print("What is the capital of Alabama?: ");//#1
 			String answer1 = input.nextLine();
-						
-			for(int i = 0; i < capitals.length; i++){
-				int correctCount = 0;
-			for(int j = 0; j < capitals[i].length; j++){
-					
-					
+			
+			
 				if(answer1 == "Montgomery"){
 					System.out.print("Your answer is correct!");
+					correctCount++;
 					System.out.println();
-					System.out.print("The correct count is: "+ correctCount++);
+					System.out.print("The correct count is: "+ correctCount);
 					System.out.println();
 					
 				}
@@ -46,10 +45,12 @@ class Exercise8_37 {
 			System.out.print("What is the capital of Alaska?: ");//#2
 			String answer2 = input.nextLine();
 			
+			
 				if(answer2 == "Juneau"){
 					System.out.print("Your answer is correct!");
+					correctCount++;
 					System.out.println();
-					System.out.print("The correct count is: "+ correctCount++);
+					System.out.print("The correct count is: "+ correctCount);
 					System.out.println();	
 				}
 				else{
@@ -63,11 +64,13 @@ class Exercise8_37 {
 			System.out.println();
 			System.out.print("What is the capital of Arizona?: ");//#3
 			String answer3 = input.nextLine();
+			
 		
 				if(answer3 == "Phoenix"){
 					System.out.print("Your answer is correct!");
+					correctCount++;
 					System.out.println();
-					System.out.print("The correct count is: "+ correctCount++);
+					System.out.print("The correct count is: "+ correctCount);
 					System.out.println();	
 				}
 				else{
@@ -81,11 +84,13 @@ class Exercise8_37 {
 			System.out.println();
 			System.out.print("What is the capital of Idaho?: ");//#4
 			String answer4 = input.nextLine();
+			
 								
 				if(answer4 == "Boise"){
-					System.out.print("Your answer is correct!");	
+					System.out.print("Your answer is correct!");
+					correctCount++;	
 					System.out.println();
-					System.out.print("The correct count is: "+ correctCount++);
+					System.out.print("The correct count is: "+ correctCount);
 					System.out.println();
 				}
 				else{
@@ -99,11 +104,13 @@ class Exercise8_37 {
 			System.out.println();
 			System.out.print("What is the capital of Arkansas?: ");//#5
 			String answer5 = input.nextLine();
+			
 									
 				if(answer5 == "Little Rock"){
 					System.out.print("Your answer is correct!");
+					correctCount++;
 					System.out.println();
-					System.out.print("The correct count is: "+ correctCount++);
+					System.out.print("The correct count is: "+ correctCount);
 					System.out.println();	
 				}
 				else{
@@ -117,11 +124,13 @@ class Exercise8_37 {
 			System.out.println();
 			System.out.print("What is the capital of Georgia?: ");//#6
 			String answer6 = input.nextLine();
+			
 										
 				if(answer6 == "Atlanta"){
 					System.out.print("Your answer is correct!");
+					correctCount++;
 					System.out.println();
-					System.out.print("The correct count is: "+ correctCount++);
+					System.out.print("The correct count is: "+ correctCount);
 					System.out.println();	
 				}
 				else{
@@ -135,11 +144,13 @@ class Exercise8_37 {
 			System.out.println();
 			System.out.print("What is the capital of California?: ");//#7
 			String answer7 = input.nextLine();
+			
 											
 				if(answer7 == "Sacramento"){
 					System.out.print("Your answer is correct!");
+					correctCount++;
 					System.out.println();
-					System.out.print("The correct count is: "+ correctCount++);
+					System.out.print("The correct count is: "+ correctCount);
 					System.out.println();	
 				}
 				else{
@@ -153,11 +164,13 @@ class Exercise8_37 {
 			System.out.println();
 			System.out.print("What is the capital of Colorado?: ");//#8
 			String answer8 = input.nextLine();
+			
 											
 				if(answer8 == "Denver"){
 					System.out.print("Your answer is correct!");
+					correctCount++;
 					System.out.println();
-					System.out.print("The correct count is: "+ correctCount++);
+					System.out.print("The correct count is: "+ correctCount);
 					System.out.println();	
 				}
 				else{
@@ -171,11 +184,13 @@ class Exercise8_37 {
 			System.out.println();
 			System.out.print("What is the capital of Florida?: ");//#9
 			String answer9 = input.nextLine();
+			
 											
 				if(answer9 == "Tallahassee"){
-					System.out.print("Your answer is correct!");	
+					System.out.print("Your answer is correct!");
+					correctCount++;
 					System.out.println();
-					System.out.print("The correct count is: "+ correctCount++);
+					System.out.print("The correct count is: "+ correctCount);
 					System.out.println();
 				}
 				else{
@@ -189,9 +204,11 @@ class Exercise8_37 {
 			System.out.println();
 			System.out.print("What is the capital of Hawaii?: ");//#10
 			String answer10 = input.nextLine();
+			
 											
 				if(answer10 == "Honolulu"){
 					System.out.print("Your answer is correct!");
+					correctCount++;
 					System.out.println();
 					System.out.print("The correct count is: "+ correctCount);
 					System.out.println();
@@ -205,7 +222,5 @@ class Exercise8_37 {
 				}
 				System.out.println();
 				System.out.print("Your final score is "+ correctCount +"/10.");
-			}
-		}
 	}
 }
