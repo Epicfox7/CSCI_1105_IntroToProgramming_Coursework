@@ -1,28 +1,211 @@
 /*
 Author: John Lopez.
-Date: 01/15/2020
+Date: 01/16/2020
+
+Alabama = Montgomery
+Alaska = Juneau
+Arizona = Phoenix
+Arkansas = Little Rock
+California = Sacramento
+Colorado = Denver
+Florida = Tallahassee
+Georgia = Atlanta
+Hawaii = Honolulu
+Idaho = Boise
+
 */
 import java.util.Scanner;
 class Exercise8_37 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-			String[][] capital1 = {
-				{"Montgomery"}};
-			
-			System.out.print("What is the capital of Alabama?: ");
-			double answer1 = input.nextDouble();
-			
-			for(int i = 0; i < capital1.length; i++){
+			String[][] capitals = new String[1][1];
+						
+			System.out.print("What is the capital of Alabama?: ");//#1
+			String answer1 = input.nextLine();
+						
+			for(int i = 0; i < capitals.length; i++){
 				int correctCount = 0;
-				for(int j = 0; j < capital1[i].length; j++){
-					if(capital1 == answer1){
-					correctCount++;
-					}
-					else{
-						System.out.print("Incorrect!");
-					}
+			for(int j = 0; j < capitals[i].length; j++){
+					
+					
+				if(answer1 == "Montgomery"){
+					System.out.print("Your answer is correct!");
+					System.out.println();
+					System.out.print("The correct count is: "+ correctCount++);
+					System.out.println();
+					
 				}
-			System.out.println("The answer should be Montgomery");
+				else{
+					System.out.print("The correct answer sould be Montgomery...");
+					System.out.println();
+					System.out.print("The correct count is: "+ correctCount);
+					System.out.println();
+				}	
+		
+			System.out.println();
+			System.out.print("What is the capital of Alaska?: ");//#2
+			String answer2 = input.nextLine();
+			
+				if(answer2 == "Juneau"){
+					System.out.print("Your answer is correct!");
+					System.out.println();
+					System.out.print("The correct count is: "+ correctCount++);
+					System.out.println();	
+				}
+				else{
+					System.out.print("The correct answer sould be Juneau...");
+					System.out.println();
+					System.out.print("The correct count is: "+ correctCount);
+					System.out.println();
+					
+				}
+				
+			System.out.println();
+			System.out.print("What is the capital of Arizona?: ");//#3
+			String answer3 = input.nextLine();
+		
+				if(answer3 == "Phoenix"){
+					System.out.print("Your answer is correct!");
+					System.out.println();
+					System.out.print("The correct count is: "+ correctCount++);
+					System.out.println();	
+				}
+				else{
+					System.out.print("The correct answer sould be Phoenix...");
+					System.out.println();
+					System.out.print("The correct count is: "+ correctCount);
+					System.out.println();
+					
+				}
+				
+			System.out.println();
+			System.out.print("What is the capital of Idaho?: ");//#4
+			String answer4 = input.nextLine();
+								
+				if(answer4 == "Boise"){
+					System.out.print("Your answer is correct!");	
+					System.out.println();
+					System.out.print("The correct count is: "+ correctCount++);
+					System.out.println();
+				}
+				else{
+					System.out.print("The correct answer sould be Boise...");
+					System.out.println();
+					System.out.print("The correct count is: "+ correctCount);
+					System.out.println();
+					
+				}
+				
+			System.out.println();
+			System.out.print("What is the capital of Arkansas?: ");//#5
+			String answer5 = input.nextLine();
+									
+				if(answer5 == "Little Rock"){
+					System.out.print("Your answer is correct!");
+					System.out.println();
+					System.out.print("The correct count is: "+ correctCount++);
+					System.out.println();	
+				}
+				else{
+					System.out.print("The correct answer sould be Little Rock...");
+					System.out.println();
+					System.out.print("The correct count is: "+ correctCount);
+					System.out.println();
+					
+				}
+				
+			System.out.println();
+			System.out.print("What is the capital of Georgia?: ");//#6
+			String answer6 = input.nextLine();
+										
+				if(answer6 == "Atlanta"){
+					System.out.print("Your answer is correct!");
+					System.out.println();
+					System.out.print("The correct count is: "+ correctCount++);
+					System.out.println();	
+				}
+				else{
+					System.out.print("The correct answer sould be Atlanta...");
+					System.out.println();
+					System.out.print("The correct count is: "+ correctCount);
+					System.out.println();
+					
+				}
+				
+			System.out.println();
+			System.out.print("What is the capital of California?: ");//#7
+			String answer7 = input.nextLine();
+											
+				if(answer7 == "Sacramento"){
+					System.out.print("Your answer is correct!");
+					System.out.println();
+					System.out.print("The correct count is: "+ correctCount++);
+					System.out.println();	
+				}
+				else{
+					System.out.print("The correct answer sould be Sacramento...");
+					System.out.println();
+					System.out.print("The correct count is: "+ correctCount);
+					System.out.println();
+					
+				}
+				
+			System.out.println();
+			System.out.print("What is the capital of Colorado?: ");//#8
+			String answer8 = input.nextLine();
+											
+				if(answer8 == "Denver"){
+					System.out.print("Your answer is correct!");
+					System.out.println();
+					System.out.print("The correct count is: "+ correctCount++);
+					System.out.println();	
+				}
+				else{
+					System.out.print("The correct answer sould be Denver...");
+					System.out.println();
+					System.out.print("The correct count is: "+ correctCount);
+					System.out.println();
+					
+				}
+				
+			System.out.println();
+			System.out.print("What is the capital of Florida?: ");//#9
+			String answer9 = input.nextLine();
+											
+				if(answer9 == "Tallahassee"){
+					System.out.print("Your answer is correct!");	
+					System.out.println();
+					System.out.print("The correct count is: "+ correctCount++);
+					System.out.println();
+				}
+				else{
+					System.out.print("The correct answer sould be Tallahassee...");
+					System.out.println();
+					System.out.print("The correct count is: "+ correctCount);
+					System.out.println();
+					
+				}
+				
+			System.out.println();
+			System.out.print("What is the capital of Hawaii?: ");//#10
+			String answer10 = input.nextLine();
+											
+				if(answer10 == "Honolulu"){
+					System.out.print("Your answer is correct!");
+					System.out.println();
+					System.out.print("The correct count is: "+ correctCount);
+					System.out.println();
+				}
+				else{
+					System.out.print("The correct answer sould be Honolulu...");
+					System.out.println();
+					System.out.print("The correct count is: "+ correctCount);
+					System.out.println();
+					
+				}
+				System.out.println();
+				System.out.print("Your final score is "+ correctCount +"/10.");
+			}
 		}
 	}
 }
