@@ -1,228 +1,132 @@
 /*
-Author: John Lopez.
-Date: 01/16/2020.
-
-Alabama = Montgomery	 
-Alaska = Juneau			 
-Arizona = Phoenix		 
-Arkansas = Little Rock   
-California = Sacramento  
-Colorado = Denver		 
-Florida = Tallahassee	 
-Georgia = Atlanta		 
-Hawaii = Honolulu        
-Idaho = Boise		
-
+Author: 
+Date: 
 */
+
 import java.util.Scanner;
-class Exercise8_37 {
+
+class Mod5ExamPart1 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-			String[][] capitals = new String[1][1];
-			int correctCount = 0;
-			
-			System.out.print("Guess the capital of each State!");
-			System.out.println();
-			System.out.println();
-			System.out.print("What is the capital of Alabama?: ");//#1
-			String answer1 = input.nextLine();
-			
-			
-				if(answer1 == "Montgomery"){
-					System.out.print("Your answer is correct!");
-					correctCount++;
-					System.out.println();
-					System.out.print("The correct count is: "+ correctCount);
-					System.out.println();
-					
-				}
-				else{
-					System.out.print("The correct answer should be Montgomery...");
-					System.out.println();
-					System.out.print("The correct count is: "+ correctCount);
-					System.out.println();
-				}	
+		int user = 0;
 		
-			System.out.println();
-			System.out.print("What is the capital of Alaska?: ");//#2
-			String answer2 = input.nextLine();
-			
-			
-				if(answer2 == "Juneau"){
-					System.out.print("Your answer is correct!");
-					correctCount++;
-					System.out.println();
-					System.out.print("The correct count is: "+ correctCount);
-					System.out.println();	
-				}
-				else{
-					System.out.print("The correct answer should be Juneau...");
-					System.out.println();
-					System.out.print("The correct count is: "+ correctCount);
-					System.out.println();
-					
-				}
-				
-			System.out.println();
-			System.out.print("What is the capital of Arizona?: ");//#3
-			String answer3 = input.nextLine();
-			
+		while (user != 1 && user != 2) {
+			System.out.println("Which action would you like to perform?");
+			System.out.println("\t1) Print Exam Grades");
+			System.out.println("\t2) Track Attendance");
+			System.out.print("Choose a menu item: ");
+
+			user = input.nextInt();
+		}
 		
-				if(answer3 == "Phoenix"){
-					System.out.print("Your answer is correct!");
-					correctCount++;
-					System.out.println();
-					System.out.print("The correct count is: "+ correctCount);
-					System.out.println();	
-				}
-				else{
-					System.out.print("The correct answer should be Phoenix...");
-					System.out.println();
-					System.out.print("The correct count is: "+ correctCount);
-					System.out.println();
-					
-				}
-				
-			System.out.println();
-			System.out.print("What is the capital of Idaho?: ");//#4
-			String answer4 = input.nextLine();
-			
-								
-				if(answer4 == "Boise"){
-					System.out.print("Your answer is correct!");
-					correctCount++;	
-					System.out.println();
-					System.out.print("The correct count is: "+ correctCount);
-					System.out.println();
-				}
-				else{
-					System.out.print("The correct answer should be Boise...");
-					System.out.println();
-					System.out.print("The correct count is: "+ correctCount);
-					System.out.println();
-					
-				}
-				
-			System.out.println();
-			System.out.print("What is the capital of Arkansas?: ");//#5
-			String answer5 = input.nextLine();
-			
-									
-				if(answer5 == "Little Rock"){
-					System.out.print("Your answer is correct!");
-					correctCount++;
-					System.out.println();
-					System.out.print("The correct count is: "+ correctCount);
-					System.out.println();	
-				}
-				else{
-					System.out.print("The correct answer should be Little Rock...");
-					System.out.println();
-					System.out.print("The correct count is: "+ correctCount);
-					System.out.println();
-					
-				}
-				
-			System.out.println();
-			System.out.print("What is the capital of Georgia?: ");//#6
-			String answer6 = input.nextLine();
-			
-										
-				if(answer6 == "Atlanta"){
-					System.out.print("Your answer is correct!");
-					correctCount++;
-					System.out.println();
-					System.out.print("The correct count is: "+ correctCount);
-					System.out.println();	
-				}
-				else{
-					System.out.print("The correct answer should be Atlanta...");
-					System.out.println();
-					System.out.print("The correct count is: "+ correctCount);
-					System.out.println();
-					
-				}
-				
-			System.out.println();
-			System.out.print("What is the capital of California?: ");//#7
-			String answer7 = input.nextLine();
-			
-											
-				if(answer7 == "Sacramento"){
-					System.out.print("Your answer is correct!");
-					correctCount++;
-					System.out.println();
-					System.out.print("The correct count is: "+ correctCount);
-					System.out.println();	
-				}
-				else{
-					System.out.print("The correct answer should be Sacramento...");
-					System.out.println();
-					System.out.print("The correct count is: "+ correctCount);
-					System.out.println();
-					
-				}
-				
-			System.out.println();
-			System.out.print("What is the capital of Colorado?: ");//#8
-			String answer8 = input.nextLine();
-			
-											
-				if(answer8 == "Denver"){
-					System.out.print("Your answer is correct!");
-					correctCount++;
-					System.out.println();
-					System.out.print("The correct count is: "+ correctCount);
-					System.out.println();	
-				}
-				else{
-					System.out.print("The correct answer should be Denver...");
-					System.out.println();
-					System.out.print("The correct count is: "+ correctCount);
-					System.out.println();
-					
-				}
-				
-			System.out.println();
-			System.out.print("What is the capital of Florida?: ");//#9
-			String answer9 = input.nextLine();
-			
-											
-				if(answer9 == "Tallahassee"){
-					System.out.print("Your answer is correct!");
-					correctCount++;
-					System.out.println();
-					System.out.print("The correct count is: "+ correctCount);
-					System.out.println();
-				}
-				else{
-					System.out.print("The correct answer should be Tallahassee...");
-					System.out.println();
-					System.out.print("The correct count is: "+ correctCount);
-					System.out.println();
-					
-				}
-				
-			System.out.println();
-			System.out.print("What is the capital of Hawaii?: ");//#10
-			String answer10 = input.nextLine();
-			
-											
-				if(answer10 == "Honolulu"){
-					System.out.print("Your answer is correct!");
-					correctCount++;
-					System.out.println();
-					System.out.print("The correct count is: "+ correctCount);
-					System.out.println();
-				}
-				else{
-					System.out.print("The correct answer should be Honolulu...");
-					System.out.println();
-					System.out.print("The correct count is: "+ correctCount);
-					System.out.println();
-					
-				}
-				System.out.println();
-				System.out.print("Your final score is "+ correctCount +"/10.");
+		if (user == 1) {
+			printExam();
+		}
+		else {
+			trackAtt();
+		}
+	}
+	
+	
+	/*
+	 * Accepts 25 scores and prints the average score and the number of A, B, C, D, and F.
+	 *
+	 * Example:
+	 *     Input: 70.11 46.33 50.54 94.66 74.40 64.12 84.07 63.50 91.12 44.74 74.88 41.83 84.62 67.08 57.53 92.01 66.11 88.10 69.75 66.54 83.57 49.31 69.71 45.15 53.57
+	 *
+	 *     Output: 
+	 *         Average score: 67.73%
+	 *         Number of A's: 3
+	 *  	   Number of B's: 4
+	 *         Number of C's: 3
+	 * 		   Number of D's: 7
+	 *         Number of F's: 8
+	 */
+	public static void printExam() {
+		Scanner input = new Scanner(System.in);
+		double[] finalScores = new double[25];
+		
+		
+		System.out.print("\nEnter 25 Scores: ");
+		double finalScore = input.nextDouble();
+		
+		System.out.printf("\nAverage Score: %.2f%%\n",finalScore / 100);
+		
+		
+		if(finalScore >= 90.00 || finalScore <= 100.00){
+			System.out.println("\nNumber of A's: ");
+		}
+		if(finalScore >= 80.00 || finalScore <= 89.99){
+			System.out.println("Number of B's: ");
+		}
+		if(finalScore >= 70.00 || finalScore <= 79.99){
+			System.out.println("Number of C's: ");
+		}
+		if(finalScore >= 60.00 || finalScore <= 69.99){
+			System.out.println("Number of D's: ");
+		}
+		if(finalScore >= 0.00 || finalScore <= 59.99){
+			System.out.println("Number of F's: ");
+		}
+		
+	}		
+
+
+	
+	/*
+	 * Display the number of days absent for the seating chart of a 5x5 classroom. 
+	 * (Hint: Your array should reflect the classroom layout to be given points.)
+	 *
+	 * Example:
+	 *     Input: 
+	 *	       2 days
+	 *	       0 0 1 0 0
+	 *	       0 1 1 0 0
+	 *	       0 0 0 0 0
+	 *	       1 0 0 1 0
+	 *	       0 0 0 0 0
+	 *
+	 *	       0 0 0 0 0
+	 *	       0 1 0 0 0
+	 *	       0 0 0 1 0
+	 *	       1 0 0 0 0
+	 *	       0 0 1 0 0 
+	 *     Output: 
+	 *         0 0 1 0 0
+	 *         0 2 1 0 0
+	 *  	   0 0 0 1 0
+	 *         2 0 0 1 0
+	 * 		   0 0 1 0 0
+	 */
+	public static void trackAtt() {
+		Scanner input  = new Scanner(System.in);
+		int att[][] = new int[][]{{" "},{" "},{" "},
+								};
+		int days = 0;
+		
+		// Ask how many days they would like to take attendance for
+		System.out.print("\nHow many days would you like to enter? ");
+		days = input.nextInt();
+		
+		System.out.println("This is the diagram of your seating chart. Enter attendance to match this chart.\n");
+		System.out.println("	   Front of Room");
+		System.out.println("|--------------------------------|");
+		System.out.println("|  [ 1]  [ 2]  [ 3]  [ 4]  [ 5]  |");
+		System.out.println("|  [ 6]  [ 7]  [ 8]  [ 9]  [10]  |");
+		System.out.println("|  [11]  [12]  [13]  [14]  [15]  |");
+		System.out.println("|  [16]  [17]  [18]  [19]  [20]  |");
+		System.out.println("|  [21]  [22]  [23]  [24]  [25]  |");
+		System.out.println("|________________________________|");
+		
+		//Enter in attendance for d days making sure the students' attendance is added into their location in the seating chart
+		for (int d = 0; d < days; d++) {
+			for (int r = 0; r <= att.length; r++) {
+				System.out.println("\nDay " + (d+1));
+				System.out.print("Enter 5 numbers for row " + r + " (1 = absent, 0 = present): ");
+				att[r] = input.nextInt();
+			}
+		}
+		
+		// Display seating chart showing number of absences
 	}
 }
