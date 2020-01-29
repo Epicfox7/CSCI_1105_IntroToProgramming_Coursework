@@ -32,6 +32,7 @@ class Exercise8_9 {
 				System.out.print("Enter a column (0, 1, or 2) for player X: ");
 				int columnX = input.nextInt();
 				if ("O".equals(tictactoe[rowX][columnX])){
+					System.out.print("Error");
 					continue;
 				}
 				tictactoe[rowX][columnX] = "X";
@@ -43,6 +44,7 @@ class Exercise8_9 {
 				System.out.print("Enter a column (0, 1, or 2) for player O: ");
 				int columnO = input.nextInt();
 				if ("X".equals(tictactoe[rowO][columnO])){
+					System.out.print("Error");
 					continue;
 				}
 				tictactoe[rowO][columnO] = "O";
