@@ -1,7 +1,8 @@
-/*
+
 Author: John Lopez.
 Date: 01/23/2020.
 */
+
 import java.util.Scanner;
 
 class Exercise8_9 {
@@ -10,30 +11,29 @@ class Exercise8_9 {
 		String[][] tictactoe = new String[][]{{" ", " ", " "},
 											{" ", " ", " "},
 											{" ", " ", " "}};
-					
-				
 		for(int i = 0; i < 9; i++){
-					
+		
 			for(int j = 0; j < tictactoe.length; j++) {
 				System.out.print("\n-------------\n|");
 				for(int k = 0; k < tictactoe.length; k++) {
 					System.out.print(" " + tictactoe[j][k] + " |");
 					
 				}
-				
 			}
 			System.out.println("\n-------------");
 			System.out.println();
-				
-				
+			
 				if (i % 2 == 0){
 				System.out.print("Enter a row (0, 1, or 2) for player X: ");
 				int rowX = input.nextInt();
 				System.out.print("Enter a column (0, 1, or 2) for player X: ");
 				int columnX = input.nextInt();
-				if ("O".equals(tictactoe[rowX][columnX])){
-					System.out.print("\nError!\n");
-					continue;
+				while ("O".equals(tictactoe[rowX][columnX])){
+					System.out.print("\nThat spot has already been taken by player O, please use another spot!\n");
+					System.out.print("\nEnter a row (0, 1, or 2) for player X: ");
+					int rowO = input.nextInt();
+					System.out.print("Enter a column (0, 1, or 2) for player X: ");
+					int columnO = input.nextInt();
 				}
 				tictactoe[rowX][columnX] = "X";
 				}
@@ -43,22 +43,24 @@ class Exercise8_9 {
 				int rowO = input.nextInt();
 				System.out.print("Enter a column (0, 1, or 2) for player O: ");
 				int columnO = input.nextInt();
-				if ("X".equals(tictactoe[rowO][columnO])){
-					System.out.print("\nError!\n");
-					continue;
+				while ("X".equals(tictactoe[rowO][columnO])){
+					System.out.print("\nThat spot has already been taken by player X, please use another spot!\n");
+					System.out.print("\nEnter a row (0, 1, or 2) for player O: ");
+					int rowX = input.nextInt();
+					System.out.print("Enter a column (0, 1, or 2) for player O: ");
+					int columnX = input.nextInt();
 				}
 				tictactoe[rowO][columnO] = "O";
 				}
-				
-			}
+		}
 			
+		
 			for(int j = 0; j < tictactoe.length; j++) {
 				System.out.print("\n-------------\n|");
 				for(int k = 0; k < tictactoe.length; k++) {
 					System.out.print(" " + tictactoe[j][k] + " |");
 				}
 			}
-			
 		System.out.print("\n-------------");
 	}
 }
