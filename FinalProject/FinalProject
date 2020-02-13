@@ -1,1 +1,75 @@
+/*
+Name: John Lopez.
+Date: 02/13/2020
+*/
 
+import java.util.Scanner;
+
+class FinalProject {
+	public static void main(String[] args) {
+		Scanner input =	new Scanner(System.in);
+		String[][] currencyConveerter = {{"United State Dollar"},
+											{"Euro "},
+											{"Russian Ruble"},
+											{"Swiss Franc"},
+											{"Norwegian Krona"},
+											{"Pound Sterling"},
+											{"Chinise Yuan"},
+											{"Japanese Yen"},
+											{"Turkish Lira"},
+											{"South Korea Won"},
+											{"Canadian Dollar"},
+											{"Indian Rupee"},
+											{"Israeli New Shekel"},
+											{"Quatari Rial"},
+											{"Nigerian Naira"},
+											{"Honduras Lempira"},
+											{"Argentina Peso"},
+											{"Brazilian Rial"},
+											{"Hungarian Forint"},
+											{"Netherlands Antillean Guilder"}};
+	
+		String userInput = " ";
+		int count = 0;
+			
+			System.out.print("Enter Currency 1: ");
+			String currency1 = input.next();
+			System.out.print("Enter Currency 1 amount: ");
+			int currency1cash = input.nextInt();
+	
+			System.out.print("\nEnter Currency 2: ");
+			String currency2 = input.next();
+			System.out.print("Enter Currency 2 amount :");
+			int currency2cash = input.nextInt();
+			
+			String uds = "United State Dollar";
+			String eu = "Euro";
+			String rr = "Russian Ruble";
+			String sf = "Swiss Franc";
+			String nk = "Norwegian Krona";
+			String ps =	"Pound Sterling";
+			String cy =	"Chinise Yuan";
+			String jy = "Japanese Yen";
+			String tl = "Turkish Lira";
+			String skw = "South Korea Won";
+			String cd = "Canadian Dollar";
+			String ir = "Indian Rupee";
+			String ins = "Israeli New Shekel";
+			String qr = "Quatari Rial";
+			String nn = "Nigerian Naira";
+			String hdl = "Honduras Lempira";
+			String ap = "Argentina Peso";
+			String br = "Brazilian Rial";
+			String hf = "Hungarian Forint";
+			String nag = "Netherlands Antillean Guilder";
+			
+			
+			
+		if(currency1.equals("United State Dollar") && currency2.equals("Euro")){
+			
+		}
+		
+		System.out.print("\n" + currency1cash + " " + currency1 + " is equals to " + currency2cash + " " + currency2);
+		
+	}
+}
