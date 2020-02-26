@@ -3,26 +3,12 @@
  * Date: 2/24/20.
  */
 
-package Final_Prjct;
 import java.util.Scanner;
-/**
- * <h1> JavaDoc </h1>
- * <p> This is my Final project, and the propose of this program is the convert a currency into another currency value </p>
- * 
- * <p> Created: 2/24/2020.
- * @author John Lopez.
- *
- */
 
-public class Final_Project {
+class Final_Project {
 
-	public static void main(String[] args) {
-/**
- * This method is used for select the currency that you want to convert into another currency.
- * 
- * @param user (String; represents the selection of currency that you made to convert a currency).
- * 
- */
+public static void main(String[] args) {
+
 	Scanner	input = new Scanner(System.in);
 	String[][] currencyConverters = new String[][] {{"United States Dollar","USD"},
 										{"Euro","EUR"},
@@ -145,12 +131,7 @@ public class Final_Project {
 }
 
 	public static void usd() {
-	/**
-	 * This method is used to compare United States Dollars to any other currency available.
-	 * 
-	 * @param user1 (String; represents the selection of currency that you made to convert a currency).
-	 */
-			Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 			String [][] uSD = {{"Euro","EUR"},
 							{"Russian Ruble","RUB"},
 							{"Swiss Franc","CHF"},
@@ -525,12 +506,7 @@ public class Final_Project {
 	
 	
 	public static void eu() {
-		/**
-		 * This method is used to compare Euro to any other currency available.
-		 * 
-		 * @param user2 (String; represents the selection of currency that you made to convert.
-		 */
-			Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 			String [][] eURO = {{"United States Dollar","USD"},
 							{"Russian Ruble","RUB"},
 							{"Swiss Franc","CHF"},
@@ -901,12 +877,7 @@ public class Final_Project {
 	
 			
 	public static void rr() {
-		/**
-		 * This method is used to compare Russian Rubles to any other currency available.
-		 * 
-		 * @param user3 (String; represents the selection of currency that you made to convert a currency).
-		 */
-			Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 			String [][] rUB = {{"United States Dollar","USD"},
 							{"Euro","EUR"},
 							{"Swiss Franc","CHF"},
@@ -1276,12 +1247,7 @@ public class Final_Project {
 	
 	
 	public static void sf() {
-		/**
-		 * This method is used to compare Swiss Francs to any other currency available.
-		 * 
-		 * @param user4 (String; represents the selection of currency that you made to convert a currency).
-		 */
-			Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 			String [][] cHF = {{"United States Dollar","USD"},
 							{"Euro","EUR"},
 							{"Russian Ruble","RUB"},
@@ -1651,12 +1617,7 @@ public class Final_Project {
 	}	
 	
 	public static void nk() {
-		/**
-		 * This method is used to compare Norwegian Krona to any other currency available.
-		 * 
-		 * @param user5 (String; represents the selection of currency that you made to convert a currency).
-		 */
-			Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 			String [][] nOK = {{"United States Dollar","USD"},
 							{"Euro","EUR"},
 							{"Russian Ruble","RUB"},
@@ -2027,12 +1988,7 @@ public class Final_Project {
 	
 			
 	public static void ps() {
-		/**
-		 * This method is used to compare Pound Sterling to any other currency available.
-		 * 
-		 * @param user6 (String; represents the selection of currency that you made to convert a currency).
-		 */
-			Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 			String [][] gRB = {{"United States Dollar","USD"},
 							{"Euro","EUR"},
 							{"Russian Ruble","RUB"},
@@ -2403,12 +2359,7 @@ public class Final_Project {
 	
 				
 	public static void cy() {
-		/**
-		 * This method is used to compare Chinise Yuan to any other currency available.
-		 * 
-		 * @param user7 (String; represents the selection of currency that you made to convert a currency).
-		 */
-			Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 			String [][] cNY = {{"United States Dollar","USD"},
 							{"Euro","EUR"},
 							{"Russian Ruble","RUB"},
@@ -2777,12 +2728,7 @@ public class Final_Project {
 	
 				
 	public static void jy() {
-		/**
-		 * This method is used to compare Japanese Yen to any other currency available.
-		 * 
-		 * @param user8 (String; represents the selection of currency that you made to convert a currency).
-		 */
-			Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 			String [][] jPY = {{"United States Dollar","USD"},
 							{"Euro","EUR"},
 							{"Russian Ruble","RUB"},
@@ -3150,15 +3096,9 @@ public class Final_Project {
 		}
 	}
 	}
-	
-				
+		
 	public static void tl() {
-		/**
-		 * This method is used to compare Turkish Lira to any other currency available.
-		 * 
-		 * @param user9 (String; represents the selection of currency that you made to convert a currency).
-		 */
-			Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 			String [][] tRY = {{"United States Dollar","USD"},
 							{"Euro","EUR"},
 							{"Russian Ruble","RUB"},
@@ -3528,12 +3468,7 @@ public class Final_Project {
 	
 		
 	public static void skw() {
-		/**
-		 * This method is used to compare South Korea Won to any other currency available.
-		 * 
-		 * @param user10 (String; represents the selection of currency that you made to convert a currency).
-		 */
-			Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 			String [][] sKW = {{"United States Dollar","USD"},
 							{"Euro","EUR"},
 							{"Russian Ruble","RUB"},
@@ -3903,12 +3838,7 @@ public class Final_Project {
 	
 				
 	public static void cd() {
-		/**
-		 * This method is used to compare Canadian Dollar to any other currency available.
-		 * 
-		 * @param user11 (String; represents the selection of currency that you made to convert a currency).
-		 */
-			Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 				String [][] cND = {{"United States Dollar","USD"},
 								{"Euro","EUR"},
 								{"Russian Ruble","RUB"},
@@ -4278,12 +4208,7 @@ public class Final_Project {
 	
 		
 	public static void ir() {
-		/**
-		 * This method is used to compare Indian Rupee to any other currency available.
-		 * 
-		 * @param user12 (String; represents the selection of currency that you made to convert a currency).
-		 */
-			Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 				String [][] iNR = {{"United States Dollar","USD"},
 								{"Euro","EUR"},
 								{"Russian Ruble","RUB"},
@@ -4654,12 +4579,7 @@ public class Final_Project {
 	
 		
 	public static void ins() {
-		/**
-		 * This method is used to compare Israeli New Shekel to any other currency available.
-		 * 
-		 * @param user13 (String; represents the selection of currency that you made to convert a currency).
-		 */
-			Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 			String [][] iLS = {{"United States Dollar","USD"},
 							{"Euro","EUR"},
 							{"Russian Ruble","RUB"},
@@ -5029,12 +4949,7 @@ public class Final_Project {
 	
 		
 	public static void qr() {
-		/**
-		 * This method is used to compare Qatari Rial to any other currency available.
-		 * 
-		 * @param user14 (String; represents the selection of currency that you made to convert a currency).
-		 */
-			Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 				String [][] qAR = {{"United States Dollar","USD"},
 								{"Euro","EUR"},
 								{"Russian Ruble","RUB"},
@@ -5405,12 +5320,7 @@ public class Final_Project {
 	
 					
 	public static void nn() {
-		/**
-		 * This method is used to compare Nigerian Naira to any other currency available.
-		 * 
-		 * @param user15 (String; represents the selection of currency that you made to convert a currency).
-		 */
-			Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 			String [][] nGN = {{"United States Dollar","USD"},
 							{"Euro","EUR"},
 							{"Russian Ruble","RUB"},
@@ -5781,12 +5691,7 @@ public class Final_Project {
 	
 				
 	public static void hdl() {
-		/**
-		 * This method is used to compare Honduras Lempira to any other currency available.
-		 * 
-		 * @param user16 (String; represents the selection of currency that you made to convert a currency).
-		 */
-			Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 			String [][] hNL = {{"United States Dollar","USD"},
 							{"Euro","EUR"},
 							{"Russian Ruble","RUB"},
@@ -6157,12 +6062,7 @@ public class Final_Project {
 	
 				
 	public static void ap() {
-		/**
-		 * This method is used to compare Argentine Peso to any other currency available.
-		 * 
-		 * @param user17 (String; represents the selection of currency that you made to convert a currency).
-		 */
-			Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 			String [][] aRS = {{"United States Dollar","USD"},
 							{"Euro","EUR"},
 							{"Russian Ruble","RUB"},
@@ -6533,12 +6433,7 @@ public class Final_Project {
 	
 		
 	public static void br() {
-		/**
-		 * This method is used to compare Brazilian Rial to any other currency available.
-		 * 
-		 * @param user18 (String; represents the selection of currency that you made to convert a currency).
-		 */
-			Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 			String [][] bRL = {{"United States Dollar","USD"},
 							{"Euro","EUR"},
 							{"Russian Ruble","RUB"},
@@ -6908,12 +6803,7 @@ public class Final_Project {
 	
 			
 	public static void hf() {
-		/**
-		 * This method is used to compare Hungarian Forint to any other currency available.
-		 * 
-		 * @param user19 (String; represents the selection of currency that you made to convert a currency).
-		 */
-			Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 			String [][] hUF = {{"United States Dollar","USD"},
 							{"Euro","EUR"},
 							{"Russian Ruble","RUB"},
@@ -7283,12 +7173,7 @@ public class Final_Project {
 	
 			
 	public static void nag() {
-		/**
-		 * This method is used to compare Netherlands Antillean Guilder to any other currency available.
-		 * 
-		 * @param user20 (String; represents the selection of currency that you made to convert a currency).
-		 */
-			Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 			String [][] aNG = {{"United States Dollar","USD"},
 							{"Euro","EUR"},
 							{"Russian Ruble","RUB"},
