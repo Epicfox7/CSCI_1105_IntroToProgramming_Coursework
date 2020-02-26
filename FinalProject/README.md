@@ -4,7 +4,7 @@
 This is my project and is used to convert 20 different currencies.
 
 ## Motivation
-Currency is very important in these days especially for marketing and knowing the convertion of a currency to another is really important, specially is you're about to invest in another country.
+It is important because the exchange rate, the price of one currency in terms of another, helps to determine a nation's economic health and hence the well-being of all the people residing in it.
 
 ## How to Run
 First you need a program or app that can run Java.
