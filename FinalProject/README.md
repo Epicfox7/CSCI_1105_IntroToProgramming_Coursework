@@ -1,18 +1,20 @@
 # Currency Converter
 
 ## Synopsis
-This is my project and is used to convert 20 differents currencies.
+This is my project and is used to convert 20 different currencies.
 
 ## Motivation
-Currency is very important in this days specially for marketing and knowing the convertion of a currency to another is really important, specially is you're about to invest in another country.
+Currency is very important in these days especially for marketing and knowing the convertion of a currency to another is really important, specially is you're about to invest in another country.
 
 ## How to Run
-First you need a program to run Java.
+First you need a program or app that can run Java.
 
 ![image](https://github.com/JLopez-dev/CSCI_1105_IntroToProgramming_Coursework/blob/master/code%20runner.png)
 
 Then you are going to type the abbreviation of each currency in order to convert into another currency.
+
 ![image](https://github.com/JLopez-dev/CSCI_1105_IntroToProgramming_Coursework/blob/master/Currency%20converter.png)
+
 ## Code Example
 ```
 String[][] currencyConverters = new String[][] {{"United States Dollar","USD"},
