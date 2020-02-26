@@ -8,10 +8,10 @@ Currency is very important in this days specially for marketing and knowing the 
 
 ## How to Run
 First you need a program to run Java.
-[https://github.com/JLopez-dev/CSCI_1105_IntroToProgramming_Coursework/blob/master/code%20runner.png]
+![image](https://github.com/JLopez-dev/CSCI_1105_IntroToProgramming_Coursework/blob/master/code%20runner.png)
 
 Then you are going to type the abbreviation of each currency in order to convert into another currency.
-[https://github.com/JLopez-dev/CSCI_1105_IntroToProgramming_Coursework/blob/master/Currency%20converter.png]
+![image](https://github.com/JLopez-dev/CSCI_1105_IntroToProgramming_Coursework/blob/master/Currency%20converter.png)
 ## Code Example
 ```
 String[][] currencyConverters = new String[][] {{"United States Dollar","USD"},
