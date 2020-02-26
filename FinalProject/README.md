@@ -11,7 +11,7 @@ First you need a program or app that can run Java.
 
 ![image](https://github.com/JLopez-dev/CSCI_1105_IntroToProgramming_Coursework/blob/master/code%20runner.png)
 
-Then you are going to type the abbreviation of each currency in order to convert into another currency.
+Then you are going to run the program and type the abbreviation of each currency in order to convert into another currency.
 
 ![image](https://github.com/JLopez-dev/CSCI_1105_IntroToProgramming_Coursework/blob/master/Currency%20converter.png)
 
